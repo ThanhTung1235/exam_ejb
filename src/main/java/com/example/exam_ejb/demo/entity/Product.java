@@ -14,6 +14,7 @@ public class Product {
     @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "product")
     private Sale sale;
 
+
     public Sale getSale() {
         return sale;
     }
